@@ -36,6 +36,7 @@ public class PersonService {
     }
 
     public int updatePerson(UUID id,Person newPerson){
+        System.out.println("newPerson = "+newPerson);
         return personDao.updatePersonById(id,newPerson);
     }
 }
